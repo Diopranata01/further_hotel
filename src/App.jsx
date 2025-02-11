@@ -1,8 +1,7 @@
 // import { useState } from "react";
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import "./App.css";
-import DatePicker from "./datePicker";
+import BookingEngine from "./BookingEngine";
+import Navbar from "./Navbar";
 
 function App() {
   // const [isOpen, setIsOpen] = useState(false);
@@ -14,22 +13,7 @@ function App() {
   return (
     <>
       <div className="app">
-        <header>
-          <nav className="navbar navbar-expand-lg px-4">
-            <div className="container-fluid p-0 d-flex justify-content-between align-items-center">
-              <a className="navbar-brand logo" href="#">
-                <strong>FURTHER</strong>
-                <span>HOTEL</span>
-              </a>
-
-              <div className="menu-icon">
-                <a href="#" className="btn-menu js-btn-menu">
-                  <span></span>
-                </a>
-              </div>
-            </div>
-          </nav>
-        </header>
+        <Navbar />
         <main>
           {/* Section 1 */}
           <div className="container-fluid text-center mx-0 p-0 container-content">
@@ -121,7 +105,7 @@ function App() {
             </div>
           </section>
 
-          <section className="view-all-accomodation w-100 px-4">
+          <section className="view-all-accomodation w-100 px-5">
             <p>VIEW ALL SUITES</p>
           </section>
 
@@ -247,7 +231,7 @@ function App() {
           {/* Section 7 */}
           <div className="container-fluid text-center mx-0 p-0 container-content-location">
             <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-start px-5">
-              <div className="col-12 col-md-4 text-wrapper ">
+              <div className="col-12 col-md-5 col-lg-4 text-wrapper ">
                 <p className="futura_medium">Getting There</p>
                 <p>
                   Nestled in the serene surroundings of Pererenan, FURTHER HOTEL
@@ -272,37 +256,68 @@ function App() {
           <div className="container-fluid text-center mx-0 px-5 container-content-location">
             <img src="/img/12.webp" className="img-fluid " alt="" />
           </div>
+
+          {/* Section 9 */}
+          <section className="section-accomodation">
+            <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-start px-5">
+              <div className="col-12 col-md-8 text-wrapper">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.077609523937!2d115.16765746116664!3d-8.684169841884202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2471787b9b7cb%3A0x32098541bca3038c!2sLa%20Favela%20Bali!5e0!3m2!1sid!2sid!4v1739175632370!5m2!1sid!2sid"
+                  width="100%" // Use 100% for responsive design
+                  height="450"
+                  style={{ border: 0 }} // Correct usage of style in JSX
+                  allowFullScreen // Correct usage of allowFullScreen
+                  loading="lazy"
+                  title="Google Maps Location" // Add a title for accessibility
+                ></iframe>
+              </div>
+              <div className="col-12 col-md-4 text-wrapper">
+                <p>
+                  Jl. Pantai Pererenan No.84, Pererenan, Kec. Mengwi, Kabupaten
+                  Badung,
+                </p>
+                <p>GET DIRECTION</p>
+                <p>
+                  Bali Airport (Ngurah Rai) Denpasar – Indonesia 45-60 minutes
+                  by car
+                </p>
+              </div>
+            </div>
+          </section>
+          
+          {/* Section 10 */}
+          <section className="section-accomodation mb-5">
+            <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-start px-5">
+              <div className="col-12 col-md-8 text-wrapper">
+                <img src="/img/13.webp" className="img-fluid" alt="" />
+              </div>
+              <div className="col-12 col-md-4 text-wrapper">
+                <p>
+                  Nestled within the enchanting landscape of Bali, FURTHER HOTEL
+                  encapsulates a vision of harmony, tranquility, and connection.
+                  Since its inception, the hotel has been more than just a place
+                  to stay; it’s a gateway to an immersive cultural experience.
+                  Today, the hotel stands as a symbol of the perfect blend
+                  between contemporary design and tradi- tional Balinese
+                  culture, always evolving, with ongoing proj- ects that
+                  continue to enrich the guest experience. The story of FURTHER
+                  HOTEL is not just a history; it is an ongoing journey in
+                  discovering and celebrating the true essence of Bali.
+                </p>
+              </div>
+            </div>
+          </section>
+          
+          {/* Section 11 */}
+          <section className="view-all-link w-100 px-5 gap-2 d-flex align-items-start text-start">
+            <p>LOCATION</p><span>|</span>
+            <p>YOUTUBE</p><span>|</span>
+            <p>INSTAGRAM</p><span>|</span>
+            <p>WHATSAPP</p>
+          </section>
         </main>
         <div className="subscribe">SUBSCRIBE</div>
-        <div className="container-fluid row booking py-3 d-flex justify-content-evenly align-items-center">
-          <div className="d-none d-md-flex col-md-2">
-            <label htmlFor="checkin">BOOK YOUR STAY</label>
-          </div>
-          <div className="d-none d-md-flex col-md-4">
-            {/* <input
-              type="date"
-              id="start-date"
-              name="cin"
-              placeholder="07-02-2025"
-              className="form-control rounded-0 mx-0"
-              required
-            /> */}
-            <DatePicker />  
-          </div>
-          <div className="d-none d-md-flex col-md-4">
-            <input
-              type="text"
-              id="checkout"
-              className="form-control rounded-0 mx-0"
-              placeholder="08-02-2025"
-            />
-          </div>
-          <div className="col-12 col-md-2">
-            <button className="btn container-fluid btn-dark rounded-0">
-              BOOK NOW
-            </button>
-          </div>
-        </div>
+        <BookingEngine />
       </div>
     </>
   );
