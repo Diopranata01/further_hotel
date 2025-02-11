@@ -1,0 +1,385 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Yoxall";
+  src: url("./assets/fonts/yoxall/YoxallBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Futura_Light";
+  src: url("./assets/fonts/futura/futura_light_bt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Futura_Book";
+  src: url("./assets/fonts/futura/FuturaPTBook.otf") format("truetype");
+}
+@font-face {
+  font-family: "Futura_Medium";
+  src: url("./assets/fonts/futura/FuturaPTMedium.otf") format("truetype");
+}
+@font-face {
+  font-family: "Futura_Bold";
+  src: url("./assets/fonts/futura/FuturaPTBold.otf") format("truetype");
+  font-weight: bold;
+}
+
+#root {
+  /* max-width: 100vw; */
+  text-align: center;
+}
+
+.app {
+  /* height: 100vh; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding-top: 4rem;
+  /* width: 100vw; */
+}
+
+header {
+  font-family: "Yoxall", Helvetica, Arial, sans-serif;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
+  padding-top: 10.36px !important;
+  padding-bottom: 10.36px !important;
+  z-index: 10;
+}
+
+.booking {
+  font-family: "Yoxall", Helvetica, Arial, sans-serif;
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Yoxall", Helvetica, Arial, sans-serif;
+  font-weight: 700 !important;
+}
+
+p {
+  font-family: "Futura_Book", Helvetica, Arial, sans-serif;
+}
+
+.futura_medium {
+  font-family: "Futura_Medium", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.text-align {
+  text-align: justify;
+}
+
+header strong {
+  font-size: 22.16px;
+  padding-top: 19px;
+  letter-spacing: 2px;
+  line-height: 10.16px;
+}
+
+.app .text-wrapper p,
+.app .view-all-accomodation p,
+.app .view-all-link p {
+  font-size: 16px !important;
+  line-height: 19.6px !important;
+  letter-spacing: 1px;
+  text-align: justify;
+  padding-top: 0px;
+}
+
+.app .view-all-link p {
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.logo strong {
+  font-weight: 700;
+  display: block;
+  -webkit-transition: opacity 0.4s, visibility 0.4s;
+  -o-transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.logo span {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  -webkit-transition: margin 0.4s, font-size 0.4s, letter-spacing 0.4s,
+    opacity 0.4s, visibility 0.4s;
+  -o-transition: margin 0.4s, font-size 0.4s, letter-spacing 0.4s, opacity 0.4s,
+    visibility 0.4s;
+  transition: margin 0.4s, font-size 0.4s, letter-spacing 0.4s, opacity 0.4s,
+    visibility 0.4s;
+  white-space: nowrap;
+}
+
+.btn-menu {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.btn-menu span:before {
+  margin-top: -10px !important;
+}
+
+.btn-menu span:after {
+  margin-top: 9px !important;
+}
+
+.btn-menu span,
+.btn-menu span:after,
+.btn-menu span:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -0.2rem;
+  height: 0.1rem;
+  background-color: #000;
+}
+
+header .logo span {
+  font-size: 22.16px !important;
+  letter-spacing: 2px;
+  line-height: 14.16px;
+}
+
+.logo {
+  text-indent: 0;
+  font-size: 4.4rem;
+  line-height: 1;
+  text-align: start;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 4.4rem;
+  -webkit-transition: opacity 0.4s, height 0.4s;
+  -o-transition: opacity 0.4s, height 0.4s;
+  transition: opacity 0.4s, height 0.4s;
+}
+
+.booking {
+  border-top: 1px solid #000;
+}
+.booking input {
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+.booking button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.booking label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.container-content {
+  margin: 9.5rem 0;
+}
+
+.container-content-location {
+  margin: 5.5rem 0;
+}
+
+.section__content {
+  padding-right: 6.9rem;
+}
+
+.container-fluid h1 {
+  font-size: 2rem;
+  margin-bottom: 0.6em;
+  text-align: start;
+}
+
+.content {
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Futura_Light", Arial, Helvetica, sans-serif;
+  color: black;
+}
+.content p {
+  margin-bottom: 0px;
+  line-height: 20.6px !important;
+  word-spacing: 1px;
+  font-size: 16px !important;
+}
+.container-fluid p {
+  line-height: 19.6px !important;
+  font-size: 16px !important;
+}
+
+.block-image .align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-content-and-images,
+.section-accomodation {
+  margin: 6rem 0;
+  /* min-width: 100vh; */
+}
+.subscribe {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  background-color: #000;
+  color: #fff;
+  padding: 18px 7px;
+  cursor: pointer;
+  font-family: "Futura_Book";
+  font-size: 15px;
+}
+.section__images {
+  height: 100%; /* Ensure the image container takes full height */
+}
+
+.section__image {
+  height: 100%; /* Make sure the image container takes full height */
+  overflow: hidden; /* Hide any overflow */
+}
+.section__image img {
+  width: 100%; /* Make the image take full width */
+  height: 100%; /* Make the image take full height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.view-all-accomodation {
+  margin-block: 50px;
+}
+
+.view-all-link {
+  margin-block: 50px;
+  padding-bottom: 20px;
+}
+
+.futura-bold {
+  font-family: "Futura_Bold";
+}
+
+@media (max-width: 1000px) {
+  .container-fluid h1 {
+    font-size: 1.2rem;
+  }
+  .section__content {
+    padding-right: 4.9rem;
+  }
+}
+@media (max-width: 900px) {
+  .container-fluid h1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .container-fluid h1 {
+    font-size: 1rem;
+  }
+  .section__content {
+    padding-right: 3.9rem;
+  }
+}
+@media (max-width: 700px) {
+  /* .container-fluid h1 {
+    font-size: 1rem;
+  } */
+}
+@media (max-width: 600px) {
+  .container-fluid h1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .container-fluid h1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .container-fluid h1 {
+    font-size: 1rem;
+  }
+}
+
+/* Max Width */
+/* Specify Media Query */
+@media (max-width: 1400px) {
+  .container-fluid h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__content {
+    padding-right: 0rem;
+  }
+  .container-fluid h1 {
+    font-size: 2rem;
+  }
+  .section-content-and-images {
+    margin: 3rem 0;
+  }
+  .content {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    max-width: 100%;
+  }
+  .section__images {
+    padding-top: 50px; /* Make sure the image container takes full height */
+  }
+}
+
+/* Min Width */
+@media (min-width: 768px) {
+  .content-sticky {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 13%;
+  }
+}
