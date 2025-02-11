@@ -88,6 +88,15 @@ p {
   color: #000;
 }
 
+.yoxall {
+  font-family: "Yoxall", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.small-text {
+  font-size: 12px !important;
+}
+
 .text-align {
   text-align: justify;
 }
@@ -107,6 +116,10 @@ header strong {
   letter-spacing: 1px;
   text-align: justify;
   padding-top: 0px;
+}
+
+.app .text-wrapper .link-nav-container p {
+  font-size: 12px !important;
 }
 
 .app .view-all-link p {
@@ -432,7 +445,8 @@ header .logo span {
 
   .big-nav-info {
     /* margin-top: 20rem !important; */
-    flex-direction: column-reverse;
+    flex-direction: row;
+    gap: 0px;
   }
 }
 

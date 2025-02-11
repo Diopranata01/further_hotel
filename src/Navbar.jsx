@@ -48,7 +48,7 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="row align-items-start text-align big-nav-info">
-              <div className="col-md-12 col-lg-8 col-xl-4">
+              <div className="col-md-4">
                 <p className="futura_medium">The Hotel, Reimagined</p>
                 <p>
                   Within the urban-tropical context of Pererenan, on the cusp of
