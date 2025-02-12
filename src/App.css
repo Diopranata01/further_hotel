@@ -40,11 +40,17 @@
   padding: 2rem 0rem;
   display: flex;
   flex-direction: column;
+  padding-bottom: 0px;
 }
 
 main {
   padding-top: 4rem;
   /* width: 100vw; */
+}
+
+main a {
+  text-decoration: none;
+  color: #000;
 }
 
 header {
@@ -67,7 +73,7 @@ header {
   right: 0;
   bottom: 0;
   background-color: #ffffff;
-  z-index: 10;
+  z-index: 9;
 }
 
 h1,
@@ -82,9 +88,23 @@ p {
   font-family: "Futura_Book", Helvetica, Arial, sans-serif;
 }
 
+.futura_book {
+  font-family: "Futura_Book", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
 .futura_medium {
   font-family: "Futura_Medium", Helvetica, Arial, sans-serif;
   color: #000;
+}
+
+.yoxall {
+  font-family: "Yoxall", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.small-text {
+  font-size: 12px !important;
 }
 
 .text-align {
@@ -97,7 +117,25 @@ header strong {
   letter-spacing: 2px;
   line-height: 10.16px;
 }
-
+.user-icon {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.user-icon.first img {
+  width: 40px;
+  margin-right: 5px;
+}
+.user-icon.second img {
+  width: 36px;
+  margin-right: 5px;
+}
+.separator {
+  height: 15px;
+  border-left: 2px solid #333;
+  margin: 0 10px;
+}
 .app .text-wrapper p,
 .app .view-all-accomodation p,
 .app .view-all-link p {
@@ -106,6 +144,10 @@ header strong {
   letter-spacing: 1px;
   text-align: justify;
   padding-top: 0px;
+}
+
+.app .text-wrapper .link-nav-container p {
+  font-size: 12px !important;
 }
 
 .app .view-all-link p {
@@ -153,6 +195,8 @@ header strong {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 0;
+  background: transparent;
+  z-index: 10;
 }
 
 .btn-menu span:before {
@@ -160,7 +204,7 @@ header strong {
 }
 
 .btn-menu span:after {
-  margin-top: 9px !important;
+  margin-top: 10px !important;
 }
 
 .btn-menu span,
@@ -174,6 +218,75 @@ header strong {
   margin-top: -0.2rem;
   height: 0.1rem;
   background-color: #000;
+}
+
+.btn-menu span:before,
+.btn-menu span:after {
+  transition: all 0.3s ease; /* Smooth transition for pseudo-elements */
+}
+
+.btn-menu.open span {
+  background-color: transparent; /* Hide the middle bar */
+}
+
+.btn-menu.open span:before {
+  transform: translateY(0.5rem) rotate(43deg); /* Rotate to form 'X' */
+}
+
+.btn-menu.open span:after {
+  transform: translateY(-0.7rem) rotate(-46deg); /* Rotate to form 'X' */
+}
+
+/* Side Navbar */
+.side-navbar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  transform: translateX(100%);
+  z-index: 5;
+  text-align: start;
+  opacity: 0;
+  padding: 0px 40px;
+}
+
+.side-navbar a {
+  letter-spacing: 5px;
+}
+
+.side-navbar.open {
+  transform: translateX(-40%);
+  opacity: 1;
+}
+
+.side-navbar.close {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.side-navbar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.side-navbar li {
+  margin: 15px 0;
+}
+
+.side-navbar a {
+  text-decoration: none;
+  color: #000; /* Link color */
+}
+.big-nav-info {
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 20px;
+}
+.big-nav-info p {
+  margin-bottom: 0px;
 }
 
 header .logo span {
@@ -351,6 +464,17 @@ header .logo span {
 @media (max-width: 1400px) {
   .container-fluid h1 {
     font-size: 1.7rem;
+  }
+
+  .side-navbar.open {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  .big-nav-info {
+    /* margin-top: 20rem !important; */
+    flex-direction: row;
+    gap: 0px;
   }
 }
 
