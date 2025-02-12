@@ -2,7 +2,6 @@
 
 import DatePicker from "./datePicker";
 
-
 const BookingEngine = () => {
   return (
     <>

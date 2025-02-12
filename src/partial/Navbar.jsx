@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,10 +33,12 @@ const Navbar = () => {
           <div className="row h-100 justify-content-center">
             <ul>
               <li>
-                <a href="#">HOME</a>
+                {/* <a href="#">HOME</a> */}
+                <Link onClick={toggleMenu} to='/'>HOME</Link>
               </li>
               <li>
-                <a href="#">SUITES</a>
+                {/* <a href="#">SUITES</a> */}
+                <Link onClick={toggleMenu} to='/suites'>SUITES</Link>
               </li>
               <li>
                 <a href="#">PRESS</a>

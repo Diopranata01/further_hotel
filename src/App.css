@@ -48,6 +48,11 @@ main {
   /* width: 100vw; */
 }
 
+main a {
+  text-decoration: none;
+  color: #000;
+}
+
 header {
   font-family: "Yoxall", Helvetica, Arial, sans-serif;
   width: 100%;
@@ -83,6 +88,11 @@ p {
   font-family: "Futura_Book", Helvetica, Arial, sans-serif;
 }
 
+.futura_book {
+  font-family: "Futura_Book", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
 .futura_medium {
   font-family: "Futura_Medium", Helvetica, Arial, sans-serif;
   color: #000;
@@ -107,7 +117,25 @@ header strong {
   letter-spacing: 2px;
   line-height: 10.16px;
 }
-
+.user-icon {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.user-icon.first img {
+  width: 40px;
+  margin-right: 5px;
+}
+.user-icon.second img {
+  width: 36px;
+  margin-right: 5px;
+}
+.separator {
+  height: 15px;
+  border-left: 2px solid #333;
+  margin: 0 10px;
+}
 .app .text-wrapper p,
 .app .view-all-accomodation p,
 .app .view-all-link p {
@@ -176,7 +204,7 @@ header strong {
 }
 
 .btn-menu span:after {
-  margin-top: 9px !important;
+  margin-top: 10px !important;
 }
 
 .btn-menu span,
