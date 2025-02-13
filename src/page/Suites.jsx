@@ -224,7 +224,7 @@ export const Suites = () => {
 
         {/* Section 4  */}
         <section className="section-accomodation mt-5">
-          <div className="container-fluid d-flex justify-content-center justify-content-md-start align-items-start flex-column flex-md-row gap-4 text-align px-4 px-md-5">
+          <div className="container-fluid d-flex justify-content-center justify-content-md-start align-items-start flex-column flex-md-row gap-4 text-align px-4 px-md-4">
             <div className="col-12 col-md-4 text-wrapper ">
               <img
                 src="/img/rooms/urban_studio.jpg"
