@@ -6,7 +6,7 @@ export const Suites = () => {
       <main>
         {/* Section 1 */}
         <section className="section-accomodation">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-align px-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-align px-4 px-md-5">
             <div className="col-12 col-md-6 text-wrapper">
               {/* <img src="/img/3.jpg" className="img-fluid" alt="" /> */}
               <h1>Suites</h1>
@@ -40,7 +40,7 @@ export const Suites = () => {
 
         {/* Section 2 */}
         <section className="section-accomodation">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-align px-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-align px-4 px-md-5">
             <div className="col-12 col-md-4 text-wrapper">
               <img
                 src="/img/rooms/urban_king_suite.jpg"
@@ -132,7 +132,7 @@ export const Suites = () => {
 
         {/* Section 4  */}
         <section className="section-accomodation mt-5">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-align px-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-align px-4 px-md-5">
             <div className="col-12 col-md-4 text-wrapper ">
               <img
                 src="/img/rooms/urban_king.jpg"
@@ -224,7 +224,7 @@ export const Suites = () => {
 
         {/* Section 4  */}
         <section className="section-accomodation mt-5">
-          <div className="container-fluid d-flex justify-content-start align-items-start flex-column flex-md-row gap-4 text-align px-5 ps-4">
+          <div className="container-fluid d-flex justify-content-center justify-content-md-start align-items-start flex-column flex-md-row gap-4 text-align px-4 px-md-5">
             <div className="col-12 col-md-4 text-wrapper ">
               <img
                 src="/img/rooms/urban_studio.jpg"
