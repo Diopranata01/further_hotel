@@ -30,7 +30,7 @@ const Navbar = () => {
         </nav>
 
         <div className={`side-navbar ${isOpen ? "open" : "close"}`}>
-          <div className="row h-100 justify-content-center">
+          <div className="row h-100 justify-content-center overflow-y-auto">
             <ul>
               <li>
                 {/* <a href="#">HOME</a> */}
@@ -50,8 +50,8 @@ const Navbar = () => {
                 <a href="#">PHOTOSHOOT</a>
               </li>
             </ul>
-            <div className="row align-items-start text-align big-nav-info">
-              <div className="col-md-4">
+            <div className="row flex-column justify-content-evenly text-align big-nav-info px-1 gap-3">
+              <div className="col-sm-4 col-md-12 col-lg-12 col-xl-12 col-xxl-4">
                 <p className="futura_medium">The Hotel, Reimagined</p>
                 <p>
                   Within the urban-tropical context of Pererenan, on the cusp of
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <p>FAQ</p>
                 <p>PRIVACY POLICY</p>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-3">
                 <p className="futura_medium">NEWSLETTER </p>
                 <input
                   type="text"
