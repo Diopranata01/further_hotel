@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 
 export const MainPage = () => {
   return (
@@ -65,7 +65,7 @@ export const MainPage = () => {
 
         {/* Section 3 */}
         <section className="section-accomodation">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-align px-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-align px-4 px-md-5">
             <div className="col-12 col-md-6 text-wrapper">
               <img src="/img/3.jpg" className="img-fluid" alt="" />
               <p>ACCOMMODATION</p>
@@ -93,13 +93,13 @@ export const MainPage = () => {
           </div>
         </section>
 
-        <section className="view-all-accomodation w-100 px-5">
+        <section className="view-all-accomodation w-100 px-4 px-md-5 mb-0 mb-md-5">
           <p>VIEW ALL SUITES</p>
         </section>
 
         {/* Section 4 */}
-        <section className="section-accomodation">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-align px-5">
+        <section className="section-accomodation mt-4 mt-md-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-align px-4 px-md-5">
             <div className="col-12 col-md-4 text-wrapper ">
               <img src="/img/5.webp" className="img-fluid" alt="" />
               <p>ARCHITECTURE</p>
@@ -149,8 +149,8 @@ export const MainPage = () => {
         </section>
 
         {/* Section 5 */}
-        <section className="section-accomodation">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-start px-5">
+        <section className="section-accomodation mt-4 mt-md-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-2 gap-md-5 text-start px-4 px-md-5">
             <div className="col-12 col-md-8 text-wrapper">
               <img src="/img/8.webp" className="img-fluid" alt="" />
               <p>FRIENDS OF FURTHER</p>
@@ -192,8 +192,8 @@ export const MainPage = () => {
         </section>
 
         {/* Section 6 */}
-        <section className="section-accomodation">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-start px-5">
+        <section className="section-accomodation mt-4 mt-md-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-2 gap-md-5 text-start px-4 px-md-5">
             <div className="col-12 col-md-4 text-wrapper">
               <img src="/img/10.webp" className="img-fluid" alt="" />
               <p></p>
@@ -218,7 +218,7 @@ export const MainPage = () => {
 
         {/* Section 7 */}
         <div className="container-fluid text-center mx-0 p-0 container-content-location">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-start px-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-start px-4 px-md-5">
             <div className="col-12 col-md-5 col-lg-4 text-wrapper ">
               <p className="futura_medium">Getting There</p>
               <p>
@@ -241,13 +241,13 @@ export const MainPage = () => {
         </div>
 
         {/* Section 8 */}
-        <div className="container-fluid text-center mx-0 px-5 container-content-location">
+        <div className="container-fluid text-center mx-0 px-4 px-md-5 container-content-location">
           <img src="/img/12.webp" className="img-fluid " alt="" />
         </div>
 
         {/* Section 9 */}
-        <section className="section-accomodation">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-start px-5">
+        <section className="section-accomodation mt-4 mt-md-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-start px-4 px-md-5">
             <div className="col-12 col-md-8 text-wrapper">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.077609523937!2d115.16765746116664!3d-8.684169841884202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2471787b9b7cb%3A0x32098541bca3038c!2sLa%20Favela%20Bali!5e0!3m2!1sid!2sid!4v1739175632370!5m2!1sid!2sid"
@@ -275,7 +275,7 @@ export const MainPage = () => {
 
         {/* Section 10 */}
         <section className="section-accomodation mb-5">
-          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-start px-5">
+          <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-5 text-start px-4 px-md-5">
             <div className="col-12 col-md-8 text-wrapper">
               <img src="/img/13.webp" className="img-fluid" alt="" />
             </div>
