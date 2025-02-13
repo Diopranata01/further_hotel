@@ -3,13 +3,15 @@ import "./App.css";
 import { Layout } from "./page/Layout";
 import { MainPage } from "./page/MainPage";
 import { Suites } from "./page/Suites";
+import DetailRoomPage from "./page/DetailRoomPage";
 
 function App() {
-  return ( // Add return statement
+  return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<MainPage />} />
-        <Route path="/suites" element={<Suites />} />
+        <Route path="room" element={<Suites />}/>
+        <Route path="room/:id" element={<DetailRoomPage />} />
       </Route>
     </Routes>
   );

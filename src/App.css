@@ -113,7 +113,7 @@ p {
 
 header strong {
   font-size: 22.16px;
-  padding-top: 19px;
+  padding-top: 10px;
   letter-spacing: 2px;
   line-height: 10.16px;
 }
@@ -138,6 +138,9 @@ header strong {
   height: 15px;
   border-left: 2px solid #333;
   margin: 0 10px;
+}
+.accomodation-desciption p {
+  margin-bottom: 0px !important;
 }
 .app .text-wrapper p,
 .app .view-all-accomodation p,
