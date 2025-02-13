@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 export const MainPage = () => {
   return (
@@ -297,7 +297,7 @@ export const MainPage = () => {
         </section>
 
         {/* Section 11 */}
-        <section className="view-all-link w-100 px-5 gap-2 d-flex align-items-start text-start">
+        <section className="view-all-link w-100 px-3 px-md-5 gap-2 d-flex align-items-start justify-content-center justify-content-md-start text-start">
           <p>LOCATION</p>
           <span>|</span>
           <p>YOUTUBE</p>
