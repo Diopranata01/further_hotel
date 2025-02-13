@@ -117,6 +117,9 @@ header strong {
   letter-spacing: 2px;
   line-height: 10.16px;
 }
+.more-info {
+  margin-left: 1.5rem;
+}
 .user-icon {
   font-size: 14px;
   display: flex;
@@ -475,6 +478,32 @@ header .logo span {
     /* margin-top: 20rem !important; */
     flex-direction: row;
     gap: 0px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .user-icon {
+    margin-right: 0px;
+  }
+  .user-icon.first img {
+    margin-right: 0px;
+    width: 40px;
+  }
+  .user-icon.second img {
+    margin-right: 0px;
+  }
+  .more-info {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .separator {
+    margin: 0px 12px 0px 0px;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 768px) {
+  .user-icon.first img {
+    margin-left: -2px;
   }
 }
 

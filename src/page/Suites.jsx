@@ -41,7 +41,7 @@ export const Suites = () => {
         {/* Section 2 */}
         <section className="section-accomodation">
           <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-align px-5">
-            <div className="col-12 col-md-4 text-wrapper ">
+            <div className="col-12 col-md-4 text-wrapper">
               <img
                 src="/img/rooms/urban_king_suite.jpg"
                 className="img-fluid"
@@ -63,12 +63,12 @@ export const Suites = () => {
                   <img src="/icon/shower-icon.png" alt="" />
                 </span>
                 <span className="separator"></span>
-                <a href="#" className="futura_book ms-4">
+                <a href="#" className="futura_book more-info">
                   MORE INFO
                 </a>
               </div>
             </div>
-            <div className="col-12 col-md-4 text-wrapper ">
+            <div className="col-12 col-md-4 text-wrapper">
               <img
                 src="/img/rooms/urban_twin.jpg"
                 className="img-fluid"
@@ -90,12 +90,12 @@ export const Suites = () => {
                   <img src="/icon/shower-icon.png" alt="" />
                 </span>
                 <span className="separator"></span>
-                <a href="#" className="futura_book ms-4">
+                <a href="#" className="futura_book more-info">
                   MORE INFO
                 </a>
               </div>
             </div>
-            <div className="col-12 col-md-4 text-wrapper ">
+            <div className="col-12 col-md-4 text-wrapper">
               <img
                 src="/img/rooms/two_urban_suite.webp"
                 className="img-fluid"
@@ -117,7 +117,7 @@ export const Suites = () => {
                   <img src="/icon/shower-icon.png" alt="" />
                 </span>
                 <span className="separator"></span>
-                <a href="#" className="futura_book ms-4">
+                <a href="#" className="futura_book more-info">
                   MORE INFO
                 </a>
               </div>
@@ -155,7 +155,7 @@ export const Suites = () => {
                   <img src="/icon/shower-icon.png" alt="" />
                 </span>
                 <span className="separator"></span>
-                <a href="#" className="futura_book ms-4">
+                <a href="#" className="futura_book more-info">
                   MORE INFO
                 </a>
               </div>
@@ -182,7 +182,7 @@ export const Suites = () => {
                   <img src="/icon/bathub-icon.png" alt="" />
                 </span>
                 <span className="separator"></span>
-                <a href="#" className="futura_book ms-4">
+                <a href="#" className="futura_book more-info">
                   MORE INFO
                 </a>
               </div>
@@ -209,7 +209,7 @@ export const Suites = () => {
                   <img src="/icon/shower-icon.png" alt="" />
                 </span>
                 <span className="separator"></span>
-                <a href="#" className="futura_book ms-4">
+                <a href="#" className="futura_book more-info">
                   MORE INFO
                 </a>
               </div>
@@ -222,7 +222,6 @@ export const Suites = () => {
           <p className="futura_medium">FURTHER STUDIO</p>
         </section>
 
-        
         {/* Section 4  */}
         <section className="section-accomodation mt-5">
           <div className="container-fluid d-flex justify-content-start align-items-start flex-column flex-md-row gap-4 text-align px-5 ps-4">
@@ -248,7 +247,7 @@ export const Suites = () => {
                   <img src="/icon/shower-icon.png" alt="" />
                 </span>
                 <span className="separator"></span>
-                <a href="#" className="futura_book ms-4">
+                <a href="#" className="futura_book more-info">
                   MORE INFO
                 </a>
               </div>
