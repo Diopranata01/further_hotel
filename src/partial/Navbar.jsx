@@ -38,7 +38,7 @@ const Navbar = () => {
               </li>
               <li>
                 {/* <a href="#">SUITES</a> */}
-                <Link onClick={toggleMenu} to='/suites'>SUITES</Link>
+                <Link onClick={toggleMenu} to='/room'>SUITES</Link>
               </li>
               <li>
                 <a href="#">PRESS</a>

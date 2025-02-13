@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Suites = () => {
   return (
@@ -42,11 +43,13 @@ export const Suites = () => {
         <section className="section-accomodation">
           <div className="container-fluid d-flex justify-content-center align-items-start flex-column flex-md-row gap-4 text-align px-4 px-md-5">
             <div className="col-12 col-md-4 text-wrapper">
-              <img
-                src="/img/rooms/urban_king_suite.jpg"
-                className="img-fluid"
-                alt=""
-              />
+              <Link to={`/room/URBAN KING SUITE`}>
+                <img
+                  src="/img/rooms/urban_king_suite.jpg"
+                  className="img-fluid"
+                  alt=""
+                />
+              </Link>
               <p></p>
               <p>URBAN KING SUITE</p>
               <div className="d-flex flex-row justify-content-start align-items-center">
@@ -63,9 +66,9 @@ export const Suites = () => {
                   <img src="/icon/shower-icon.png" alt="" />
                 </span>
                 <span className="separator"></span>
-                <a href="#" className="futura_book more-info">
+                <Link to={`/room/URBAN KING SUITE`} href="#" className="futura_book more-info">
                   MORE INFO
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-4 text-wrapper">
@@ -253,6 +256,17 @@ export const Suites = () => {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Section 5 */}
+        <section className="view-all-link w-100 px-3 px-md-4 gap-2 d-flex align-items-start justify-content-center justify-content-md-start text-start">
+          <p>LOCATION</p>
+          <span>|</span>
+          <p>YOUTUBE</p>
+          <span>|</span>
+          <p>INSTAGRAM</p>
+          <span>|</span>
+          <p>WHATSAPP</p>
         </section>
       </main>
       <div className="subscribe">SUBSCRIBE</div>
